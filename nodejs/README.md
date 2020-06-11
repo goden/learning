@@ -13,5 +13,5 @@ NodeJS可區分為LTS與Current版本：
 
 下載網址：https://nodejs.org/zh-tw/download/
 
-目前支援 Windows、Mac 與 Linux 版本，
+目前支援 Windows、Mac 與 Linux 版本。
 
