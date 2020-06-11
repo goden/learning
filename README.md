@@ -2,6 +2,8 @@
 
 ## 前端(Front-end)
 
+- NodeJS
+
 ## 後端(Back-end)
 
 ## 資料庫(Database)
