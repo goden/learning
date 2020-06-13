@@ -13,7 +13,9 @@ NodeJS可區分為LTS與Current版本：
 
 下載網址：https://nodejs.org/zh-tw/download/
 
-目前支援 Windows、Mac 與 Linux 版本。如果對 NodeJS有多版本的需求，可以參考以下章節來了解NVM的安裝方式與使用方式。
+目前支援 Windows、Mac 與 Linux 版本。如果本身已經有安裝過 NodeJS，再安裝會將系統原有的版本給覆蓋掉成新的版本。
+
+如果對 NodeJS有多版本的需求，可以參考以下章節來了解NVM的安裝方式與使用方式。
 
 ## NVM
 
@@ -27,17 +29,71 @@ NodeJS可區分為LTS與Current版本：
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-​		或
+安裝後的畫面如下，安裝完成必須要重啟終端機讓本次安裝生效：
+
+![image-20200613142405760](captures/image-20200613142405760.png)
+
+如果安裝後發生command not found的情況，可執行以下script來嘗試解決~
+
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+```
+
+如果還是無法解決問題，請參考[NVM官網說明](https://github.com/nvm-sh/nvm#troubleshooting-on-macos)。
+
+#### Linux
+
+執行以下指令來安裝 NVM
 
 ```bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
-Mac 安裝後的畫面如下：
+如果安裝後發生command not found的情況，可以關閉終端機再重啟，然後輸入以下指令再驗證看看結果為何。
 
-![image-20200613142405760](captures/image-20200613142405760.png)
+```bash
+command -v nvm
+```
 
 #### Windows
 
 可以至Windows NVM的github專案 ([windows-nvm](https://github.com/coreybutler/nvm-windows/releases)) 下載套新版本
+
+### NVM 指令
+
+查詢現有系統安裝的node版本
+
+```bash
+goden@goden ~ % nvm ls
+->       system
+iojs -> N/A (default)
+node -> stable (-> N/A) (default)
+unstable -> N/A (default)
+nvm_list_aliases:36: no matches found: /Users/goden/.nvm/alias/lts/*
+```
+
+查詢有那些nodejs版本可以安裝(本功能 windows 版本不支援)
+
+```bash
+nvm ls-remote
+```
+
+安裝指定版本
+
+```bash
+nvm install v12.18.0
+```
+
+使用特定版本
+
+```
+nvm use v12.18.0
+```
+
+更改預設版本
+
+```bash
+nvm alias default v12.18.0
+```
 
