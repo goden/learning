@@ -33,8 +33,11 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
+Mac 安裝後的畫面如下：
+
+![image-20200613142405760](captures/image-20200613142405760.png)
+
 #### Windows
 
 可以至Windows NVM的github專案 ([windows-nvm](https://github.com/coreybutler/nvm-windows/releases)) 下載套新版本
 
-![image-20200613142405760](captures/image-20200613142405760.png)
