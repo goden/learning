@@ -37,4 +37,4 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 可以至Windows NVM的github專案 ([windows-nvm](https://github.com/coreybutler/nvm-windows/releases)) 下載套新版本
 
-![image-20200613142405760](/Users/goden/Library/Application Support/typora-user-images/image-20200613142405760.png)
+![image-20200613142405760](captures/image-20200613142405760.png)
