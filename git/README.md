@@ -16,6 +16,7 @@
 直接透過下載安裝檔進行安裝 - https://git-scm.com/download/win
 
 ![image-20200614125611523](../captures/image-20200614125611523.png)
+
 可點選合適的系統版本進行下載安裝，安裝完畢後可使用Git Bash進行驗測。Git Bash 與命令提示字元的差異在於，它是模擬在Linux裡很常用應用軟體，bash。
 
 ## Linux
