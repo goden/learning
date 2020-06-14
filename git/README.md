@@ -106,5 +106,9 @@ sudo apt-get install gitk
   mv /tmp/demo.html /tmp/hello.html & git add /tmp/hello.html
   ```
 
-- 修改最後一次交付訊息
-  git 
+- 查詢特定行數(範圍)程式碼的始作俑者
+
+  ```bash
+  git blame /tmp/demo.html
+  git blame -L 1,10 /tmp/demo.html				//查詢特定行數的程式碼異動記錄
+  ```
