@@ -51,3 +51,60 @@ which git & git —version
 sudo apt-get install gitk
 ```
 
+雖然沒有像 SourceTree 與 Github Desktop 那麼好用，但基本功能都有支援。
+
+## 基本 Git 指令
+
+- 初始化。在目錄執行 `git init` 指令，代表該目錄(含以下所有目錄)都要列入 git 控管
+
+  ```bash
+  cd /tmp/ & git init
+  ```
+
+- 查詢狀態
+
+  ```bash
+  git status
+  ```
+
+- 將異動內容加到暫存區。說得明白點就是將檔案納入 git 管理
+
+  ```bash
+  git add /tmp/demo.html
+  ```
+
+- 將暫存區的異動內容交付到 local repository
+
+  ```bash
+  git commit -m "initialize the demo"			//交付異動
+  git commit --amend -m "re-initialize"   //修改最後一次交付訊息
+  ```
+
+- 當把暫時區的異動都交付至 local repository 後，用 `git log` 來查詢異動記錄
+
+  ```bash
+  git log 																//查詢異動記錄
+  git log --online --author="goden"				//查詢goden的異動記錄
+  git log --online --author="goden\|mike"	//查詢goden或mike的異動記錄
+  git log --online --grep="Bugfix"				//查詢交付訊息中有Bugfix字樣的記錄
+  git log -S "Demo"												//查詢交付異動檔案中有Demo內容的記錄
+  ```
+
+- 刪除異動檔案
+
+  ```bash
+  git rm /tmp/demo.html										//刪除特定檔案
+  //相當於以下兩個指令的結合
+  rm /tmp/demo.html & git add /tmp/demo.html
+  ```
+
+- 變更異動檔名
+
+  ```bash
+  git mv /tmp/demo.html	/tmp/hello.html		//變更特定檔案
+  //相當於以下指令的結合
+  mv /tmp/demo.html /tmp/hello.html & git add /tmp/hello.html
+  ```
+
+- 修改最後一次交付訊息
+  git 
