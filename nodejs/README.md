@@ -97,3 +97,6 @@ nvm use v12.18.0
 nvm alias default v12.18.0
 ```
 
+### 如何移除 nvm 與 NodeJS
+
+參考本[連結](./NVM_RM.md)
