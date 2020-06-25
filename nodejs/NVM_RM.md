@@ -1,0 +1,1 @@
+如何移除 NVM 與 NodeJS
