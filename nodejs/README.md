@@ -4,7 +4,7 @@
 
 官網：https://nodejs.org/zh-tw/
 
-NodeJS可區分為LTS與Current版本：
+NodeJS 可區分為 LTS 與 Current 版本：
 
 - **LTS**，**L**ong-**T**erm **S**upport。官方長期維謢的穩定版，建議大家採用LTS版本。(目前最新版本為**12.18.0**)
 - **Current**，屬於嘗鮮版本，新功能可於此版出現。
@@ -33,14 +33,14 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 ![image-20200613142405760](captures/image-20200613142405760.png)
 
-如果安裝後發生command not found的情況，可執行以下script來嘗試解決~
+如果安裝後發生 command not found 的情況，可執行以下script來嘗試解決~
 
 ```bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 ```
 
-如果還是無法解決問題，請參考[NVM官網說明](https://github.com/nvm-sh/nvm#troubleshooting-on-macos)。
+如果還是無法解決問題，參考 [NVM官網說明](https://github.com/nvm-sh/nvm#troubleshooting-on-macos)。
 
 #### Linux
 
