@@ -42,11 +42,28 @@ brew doctor & brew cleanup   // remove symlinks and softlinks
 ### 手動移除
 
 ```bash
-rm -rf /usr/local/lib/node* 							// remove node and node_modules from /usr
-rm -rf /usr/local/include/node*
+rm -rf /usr/local/lib/node* 							// remove node and node_modules from /usr/local/lib
+rm -rf /usr/local/include/node*           // remove node and node_modules from /usr/local/include
+rm -rf /usr/local/bin/node*								// remove node, node-debug and node-gyp from /usr/local/bin
+rm -rf ~/.npmrc														// remove .npmrc which contains npm settings from home directory
+																					// recommended to keep if you wanbt a re-installation.
+rm -rf ~/.npm ~/.node-gyp ~/.node_repl_history
+rm -rf /usr/local/share/man/man1/node*
+rm -rf /usr/local/share/man/man1/npm*
+rm -rf /usr/local/lib/dtrace/node.d
+rm -rf /opt/local/bin/node /opt/local/include/node
+rm -rf /opt/local/lib/node_modules
+rm -rf /usr/local/share/doc/node
+rm -rf /usr/local/share/systemtap/tapset/node.stp
 ```
 
+網路上其它人的做法([原文](https://www.positronx.io/how-to-uninstall-node-js-and-npm-from-macos/))
 
+```bash
+cd /usr/local/include & sudo rm -R node
+cd /usr/local/lib & sudo rm -R node_modules
+cd /usr/local/bin & sudo rm -R node
+```
 
 回到 [NodeJS](./README.md)
 
