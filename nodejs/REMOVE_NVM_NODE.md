@@ -35,18 +35,17 @@ sudo apt-get remove nodejs
 如果是以 `brew install node` 方式來安裝，可執行以下指令。
 
 ```bash
-brew uninstall node					 // remove node from system
+brew uninstall node	     // remove node from system
 brew doctor & brew cleanup   // remove symlinks and softlinks 
 ```
 
 ### 手動移除
 
 ```bash
-rm -rf /usr/local/lib/node* 							// remove node and node_modules from /usr/local/lib
+rm -rf /usr/local/lib/node* 		  // remove node and node_modules from /usr/local/lib
 rm -rf /usr/local/include/node*           // remove node and node_modules from /usr/local/include
-rm -rf /usr/local/bin/node*								// remove node, node-debug and node-gyp from /usr/local/bin
-rm -rf ~/.npmrc														// remove .npmrc which contains npm settings from home directory
-																					// recommended to keep if you wanbt a re-installation.
+rm -rf /usr/local/bin/node*		  // remove node, node-debug and node-gyp from /usr/local/bin
+rm -rf ~/.npmrc				  // remove .npmrc which contains npm settings from home directory.  										                  // recommended to keep if you wanbt a re-installation.
 rm -rf ~/.npm ~/.node-gyp ~/.node_repl_history
 rm -rf /usr/local/share/man/man1/node*
 rm -rf /usr/local/share/man/man1/npm*
