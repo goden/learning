@@ -76,8 +76,8 @@ sudo apt-get install gitk
 - 將暫存區的異動內容交付到 local repository
 
   ```bash
-  git commit -m "initialize the demo"			//交付異動
-  git commit --amend -m "re-initialize"   //修改最後一次交付訊息
+  git commit -m "initialize the demo"		//交付異動
+  git commit --amend -m "re-initialize"		//修改最後一次交付訊息
   ```
 
 - 當把暫時區的異動都交付至 local repository 後，用 `git log` 來查詢異動記錄
