@@ -1,8 +1,4 @@
-# 移除 
-
-[TOC]
-
-# NodeJS
+# 移除 NodeJS
 
 ## Windows
 
@@ -41,6 +37,14 @@ sudo apt-get remove nodejs
 ```bash
 brew uninstall node	     // remove node from system
 brew doctor & brew cleanup   // remove symlinks and softlinks 
+```
+
+NVM
+
+如果當初是以 NVM 來進行安裝 NodeJS，用 `which node` 指令其實就很清楚。
+
+```bash
+/Users/{user}/.nvm/versions/node/v12.18.0/bin/node
 ```
 
 ### 手動移除
