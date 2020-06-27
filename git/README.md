@@ -112,5 +112,5 @@ sudo apt-get install gitk
 
   ```bash
   git blame /tmp/demo.html
-  git blame -L 1,10 /tmp/demo.html				//查詢特定行數的程式碼異動記錄
+  git blame -L 1,10 /tmp/demo.html			//查詢特定行數的程式碼異動記錄
   ```
