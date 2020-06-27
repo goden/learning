@@ -83,18 +83,19 @@ sudo apt-get install gitk
 - 當把暫時區的異動都交付至 local repository 後，用 `git log` 來查詢異動記錄
 
   ```bash
-  git log 																//查詢異動記錄
-  git log --online --author="goden"				//查詢goden的異動記錄
-  git log --online --author="goden\|mike"	//查詢goden或mike的異動記錄
-  git log --online --grep="Bugfix"				//查詢交付訊息中有Bugfix字樣的記錄
-  git log -S "Demo"												//查詢交付異動檔案中有Demo內容的記錄
+  git log 	//查詢異動記錄
+  git log --online --author="goden"		//查詢goden的異動記錄
+  git log --online --author="goden\|mike"		//查詢goden或mike的異動記錄
+  git log --online --grep="Bugfix"		//查詢交付訊息中有Bugfix字樣的記錄
+  git log -S "Demo"		//查詢交付異動檔案中有Demo內容的記錄
   ```
 
 - 刪除異動檔案
 
   ```bash
-  git rm /tmp/demo.html										//刪除特定檔案
-  //相當於以下兩個指令的結合
+  git rm /tmp/demo.html		//刪除特定檔案
+  
+  // 相當於以下兩個指令的結合
   rm /tmp/demo.html & git add /tmp/demo.html
   ```
 
@@ -102,6 +103,7 @@ sudo apt-get install gitk
 
   ```bash
   git mv /tmp/demo.html	/tmp/hello.html		//變更特定檔案
+  
   //相當於以下指令的結合
   mv /tmp/demo.html /tmp/hello.html & git add /tmp/hello.html
   ```
