@@ -87,7 +87,7 @@ sudo apt-get install gitk
   git log --online --author="goden"		//查詢goden的異動記錄
   git log --online --author="goden\|mike"		//查詢goden或mike的異動記錄
   git log --online --grep="Bugfix"		//查詢交付訊息中有Bugfix字樣的記錄
-  git log -S "Demo"					//查詢交付異動檔案中有Demo內容的記錄
+  git log -S "Demo"				//查詢交付異動檔案中有Demo內容的記錄
   ```
 
 - 刪除異動檔案
