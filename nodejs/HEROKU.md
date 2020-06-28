@@ -19,3 +19,8 @@ Heroku CLI 可用來部署管理 app，檢視 app 運作情況。
 $ brew install heroku/brew/heroku
 ```
 
+**Windows**
+
+- [64 bits 安裝檔](https://cli-assets.heroku.com/heroku-x64.exe)
+- [32 bits 安裝檔](https://cli-assets.heroku.com/heroku-x86.exe)
+
