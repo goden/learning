@@ -47,4 +47,3 @@ Logged in as me@example.com
 ```bash
 $ heroku login -i
 ```
-
