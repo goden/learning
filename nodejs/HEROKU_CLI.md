@@ -1,15 +1,11 @@
-# Heroku 上部署 Deploy Node App
+# 組態設定
 
-## 組態設定
+## Heroku CLI
 
-### Heroku CLI
-
-Heroku CLI 需要先安裝 Git, 參考以下連結：
+Heroku CLI 可用來部署管理 app，檢視 app 運作情況。Heroku CLI 需要先安裝 Git, 參考以下連結：
 
 - [Git Installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [Git Learning](../git/README.md)
-
-Heroku CLI 可用來部署管理 app，檢視 app 運作情況。 
+- [Git Learning](../git/README.md) 
 
 **Mac OS**
 
@@ -30,7 +26,7 @@ $ brew install heroku/brew/heroku
 $ sudo snap install heroku --classic
 ```
 
-### 登入 Heroku 
+## 登入 Heroku 
 
 登入 heroku CLI 會要求開啟瀏覽器來進行登入程序。
 
@@ -45,4 +41,3 @@ Logged in as me@example.com
 登入成功後
 
 <img src="captures/image-20200628203653706.png" alt="image-20200628203653706" style="zoom:50%;" />
-
