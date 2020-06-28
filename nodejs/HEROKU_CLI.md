@@ -38,6 +38,13 @@ Logging in... done
 Logged in as me@example.com
 ```
 
-登入成功後
+登入成功後，取得正常使用 CLI
 
 <img src="captures/image-20200628203653706.png" alt="image-20200628203653706" style="zoom:50%;" />
+
+ 當然也能只透過命令列就完成登入程序
+
+```bash
+$ heroku login -i
+```
+
