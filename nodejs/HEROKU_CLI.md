@@ -42,7 +42,7 @@ Logged in as me@example.com
 
 <img src="captures/image-20200628203653706.png" alt="image-20200628203653706" style="zoom:50%;" />
 
- 當然也能只透過命令列就完成登入程序
+ 當然也能只透過命令列就完成登入程序，CLI 會將 email 與 API token 儲存在 `~/.netrc` 中。
 
 ```bash
 $ heroku login -i
