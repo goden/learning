@@ -24,3 +24,8 @@ $ brew install heroku/brew/heroku
 - [64 bits 安裝檔](https://cli-assets.heroku.com/heroku-x64.exe)
 - [32 bits 安裝檔](https://cli-assets.heroku.com/heroku-x86.exe)
 
+**Linux**
+
+```bash
+$ sudo snap install heroku --classic
+```
