@@ -4,7 +4,7 @@
 
 - [Git](git/README.md)
 - [Homebrew](Homebrew/README.md)
-
 - [NodeJS](nodejs/README.md)
+- [NuxtJS](Nuxt/README.md)
 
 
