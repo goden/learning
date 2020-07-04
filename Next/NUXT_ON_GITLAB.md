@@ -25,14 +25,14 @@
 
 開啟中文官網，點選**開始使用**
 
-<img src="/Users/goden/Dev/GitHub/learning/captures/截圖 2020-07-04 下午6.04.28.png" alt="截圖 2020-07-04 下午6.04.28" style="zoom:50%;" />
+<img src="../captures/截圖 2020-07-04 下午6.04.28.png" alt="截圖 2020-07-04 下午6.04.28" style="zoom:50%;" />
 
 Nuxt 官網很貼心，直接就告訴你怎麼安裝，只要按圖操作即可完成。這裡有兩個重點要說明，
 
 * Nuxt 團隊打造了創建工具 [create-nuxt-app](https://github.com/nuxt/create-nuxt-app)。這是一套 Nuxt CLI 工具，提供 CLI 介面可以在短時間建立 Nuxt 專案。
 * npx 會在安裝完 create-nuxt-app 後來創建 Nuxt 專案，然後就把 create-nuxt-app 給刪除掉。
 
-<img src="/Users/goden/Dev/GitHub/learning/captures/image-20200704180844739-3857352.png" alt="image-20200704180844739" style="zoom:50%;" />
+<img src="../captures/image-20200704180844739-3857352.png" alt="image-20200704180844739" style="zoom:50%;" />
 
 ### 執行 npx
 
