@@ -15,7 +15,7 @@
 
 直接透過下載安裝檔進行安裝 - https://git-scm.com/download/win
 
-![image-20200614125611523](../captures/image-20200614125611523.png)
+<img src="../captures/image-20200614125611523.png" alt="image-20200614125611523" style="zoom: 50%;" />
 
 可點選合適的系統版本進行下載安裝，安裝完畢後可使用Git Bash進行驗測。Git Bash 與命令提示字元的差異在於，它是模擬在Linux裡很常用應用軟體，bash。
 
@@ -40,15 +40,15 @@ which git & git —version
 在 [Git官網](https://git-scm.com/downloads/guis) 上有很多 GUI 工具的介紹，較廣為人知的就是 Github Desktop 與 Source Tree了。
 
 - [SourceTree](https://www.sourcetreeapp.com/)
-  ![image-20200614131822725](../captures/image-20200614131822725.png)
+  <img src="../captures/image-20200614131822725.png" alt="image-20200614131822725" style="zoom:50%;" />
 
 - [Github Desktop](https://desktop.github.com/)
-  ![image-20200614132031437](../captures/image-20200614132031437.png)
+  <img src="../captures/image-20200614132031437.png" alt="image-20200614132031437" style="zoom: 50%;" />
 
 對於 Linux 用戶來說，上述兩個軟體都無法安裝。建議使用 gitk，可以使用以下指令來安裝：
 
-```
-sudo apt-get install gitk
+```bash
+$ sudo apt-get install gitk
 ```
 
 雖然沒有像 SourceTree 與 Github Desktop 那麼好用，但基本功能都有支援。
@@ -58,59 +58,79 @@ sudo apt-get install gitk
 - 初始化。在目錄執行 `git init` 指令，代表該目錄(含以下所有目錄)都要列入 git 控管
 
   ```bash
-  cd /tmp/ & git init
+  $ cd /tmp/ & git init
   ```
 
 - 查詢狀態
 
   ```bash
-  git status
+  $ git status
   ```
 
 - 將異動內容加到暫存區。說得明白點就是將檔案納入 git 管理
 
   ```bash
-  git add /tmp/demo.html
+  $ git add /tmp/demo.html
   ```
 
 - 將暫存區的異動內容交付到 local repository
 
   ```bash
-  git commit -m "initialize the demo"		//交付異動
-  git commit --amend -m "re-initialize"		//修改最後一次交付訊息
+  $ git commit -m "initialize the demo"		//交付異動
+  $ git commit --amend -m "re-initialize"		//修改最後一次交付訊息
   ```
 
 - 當把暫時區的異動都交付至 local repository 後，用 `git log` 來查詢異動記錄
 
   ```bash
-  git log 	//查詢異動記錄
-  git log --online --author="goden"		//查詢goden的異動記錄
-  git log --online --author="goden\|mike"		//查詢goden或mike的異動記錄
-  git log --online --grep="Bugfix"		//查詢交付訊息中有Bugfix字樣的記錄
-  git log -S "Demo"				//查詢交付異動檔案中有Demo內容的記錄
+  $ git log 	//查詢異動記錄
+  $ git log --online --author="goden"		//查詢goden的異動記錄
+  $ git log --online --author="goden\|mike"		//查詢goden或mike的異動記錄
+  $ git log --online --grep="Bugfix"		//查詢交付訊息中有Bugfix字樣的記錄
+  $ git log -S "Demo"				//查詢交付異動檔案中有Demo內容的記錄
   ```
 
 - 刪除異動檔案
 
   ```bash
-  git rm /tmp/demo.html		//刪除特定檔案
+  $ git rm /tmp/demo.html		//刪除特定檔案
   
   // 相當於以下兩個指令的結合
-  rm /tmp/demo.html & git add /tmp/demo.html
+  $ rm /tmp/demo.html & git add /tmp/demo.html
   ```
 
 - 變更異動檔名
 
   ```bash
-  git mv /tmp/demo.html	/tmp/hello.html		//變更特定檔案
+  $ git mv /tmp/demo.html	/tmp/hello.html		//變更特定檔案
   
   //相當於以下指令的結合
-  mv /tmp/demo.html /tmp/hello.html & git add /tmp/hello.html
+  $ mv /tmp/demo.html /tmp/hello.html & git add /tmp/hello.html
   ```
 
 - 查詢特定行數(範圍)程式碼的始作俑者
 
   ```bash
-  git blame /tmp/demo.html
-  git blame -L 1,10 /tmp/demo.html		//查詢特定行數的程式碼異動記錄
+  $ git blame /tmp/demo.html
+  $ git blame -L 1,10 /tmp/demo.html		//查詢特定行數的程式碼異動記錄
   ```
+
+- 查詢目前分支、創建新分支
+
+  ```bash
+  $ git branch
+  $ git branch newbranch
+  ```
+
+- 切換到新分支
+
+  ```bash
+  $ git checkout newbranch
+  ```
+
+- 將程式碼從本地端儲存庫(Local Repository)推送到遠端儲存庫(Remote Repository)
+
+```bash
+$ git push -u origin dev
+```
+
