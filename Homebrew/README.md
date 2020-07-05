@@ -5,7 +5,7 @@ Homebrew 是 Mac/Linux 常見的一種套件管理工具，透過 `brew` 指定�
 ## 安裝 Homebrew
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 ## 使用 Homebrew
@@ -14,22 +14,22 @@ Homebrew 是 Mac/Linux 常見的一種套件管理工具，透過 `brew` 指定�
 
 使用 `brew install` 指令來安裝指定套件名稱，例：安裝 wget
 
-```
-brew install wget
+```bash
+$ brew install wget
 ```
 
 ### 更新套件
 
 `brew update` 指的是更新 Homebrew 以及套件清單; `brew upgrade` 指的是升級套件清單; `brew cleanup` 則是清除暫存檔。
 
-```
-brew update && brew upgrade && brew cleanup
+```bash
+$ brew update && brew upgrade && brew cleanup
 ```
 
 ### 查詢已安裝的套件
 
-```
-brew list
+```bash
+$ brew list
 ```
 
 ### 搜尋套件
@@ -37,7 +37,7 @@ brew list
 使用 `brew search` 加上套件名稱或關鍵字來搜尋標的套件，例：搜尋 git
 
 ```bash
-brew search git
+$ brew search git
 ```
 
 ### 顯示套件資訊
@@ -45,7 +45,7 @@ brew search git
 使用 `brew info` 來顯示套件的詳細資訊，例：顯示 git 套件的明細。
 
 ```
-brew info git
+$ brew info git
 ```
 
 ### 移除套件名稱
@@ -70,33 +70,33 @@ brew outdated
 
 ## 安裝 Cask
 
-```
-brew tap caskroom/cask
+```bash
+$ brew tap caskroom/cask
 ```
 
 ## 用途
 
 ### 搜尋軟體
 
-```
-brew cask search <軟體名稱or關鍵字>
+```bash
+$ brew cask search <軟體名稱or關鍵字>
 ```
 
 ### 安裝軟體
 
-```
-brew cask install <軟體名稱or關鍵字>
+```bash
+$ brew cask install <軟體名稱or關鍵字>
 ```
 
 ### 移除軟體
 
-```
-brew cask uninstall <軟體名稱or關鍵字>
+```bash
+$ brew cask uninstall <軟體名稱or關鍵字>
 ```
 
 ### 更新軟體
 
-```
-brew cask update
+```bash
+$ brew cask update
 ```
 
