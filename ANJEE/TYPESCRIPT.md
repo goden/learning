@@ -42,3 +42,57 @@ if(isReady === true) {
 }
 ```
 
+### Number Type
+
+在 TypeScript 中所有的數值都是 浮點數 (float) ，在 TypeScript 進行數值運算時，要特別小心小數點的數值運算，用 number 指定 TypeScript 的變數為數值類型。
+
+```typescript
+var total: number = 0;
+```
+
+在 TypeScript 之中，數值類型的使用方法與 JavaScript 沒有太大的差別，但型別檢查，可以省去很多傳入不正確資料產生的錯誤。
+
+```typescript
+//// 宣告變數
+var a: number = 1;
+var b: number = 2;
+var c: string = 'Hello';
+
+//// 新增一個限定只能傳入 number 的 function
+function Add(a: number, b: number) {
+    return a + b;
+}
+    
+Add(a, b);    //// 3
+Add(a, c);    //// 錯誤提示，若在 JavaScript 會直接回傳 '1Hello'
+```
+
+### String
+
+字串類型用來儲存文字資料，例：動態顯示的文章標題，或是要推出的折扣條件等等，在 TypeScript 中同樣使用 string 代表字串類型，指定的時候可以使用 單引號 (') 或 雙引號 (") 標示文字。
+
+```typescript
+var title = '頭條新聞';
+var content = "今日新聞內容如下，XXXXXX";
+```
+
+
+在 TypeScript 1.4 的版本之後，為了增加組合字串的便利性，增加了 Template Literals 功能，使用 ` - 重音符號 包圍文字，表示這串文字為 Template String，而在 Template 中可以隨意的使用 ${variable} 的方式放置變數，大大增加動態組合字串的可讀性，請參考下面的使用範例。
+
+```typescript
+var name = 'John';                 //// 宣告等等要組合使用的字串
+
+console.log(`Hello, ${name}!`);    //// TypeScript 發現這是 Template，會自動把 name代入
+                                   //// 結果為 Hello, John!
+```
+
+
+因為 TypeScript 把字串組裝的事情透過編譯處理掉了，可以看看實際編譯後的 JavaScript 長什麼樣子。
+
+```typescript
+//// 編譯後的 JavaScript ，其實就是使用字串相加的方式
+//// 但我們不需要這樣寫
+var name = 'John'; 
+console.log("Hello, " + name + "!");
+```
+
