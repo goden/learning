@@ -118,3 +118,13 @@ if(size === Size.Large){
 }
 ```
 
+### Any
+
+任意類型 (Any) 其實就相當於 JavaScript 的變數，自動檢查型別時因為指派任意型別並不太會有錯誤產生，不建議在 TypeScript 定義任何的 Any 類型！
+
+```typescript
+var data: any = 1;         // 宣告為 any 類型
+
+data = '1';                // 可以指派任意型別不會有錯誤
+data = ['John', 'Mark'];
+```
