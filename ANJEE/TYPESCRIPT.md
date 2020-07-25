@@ -87,7 +87,6 @@ console.log(`Hello, ${name}!`);    // TypeScript 發現這是 Template，會自�
 ```
 
 
-
 因為 TypeScript 把字串組裝的事情透過編譯處理，實際編譯 JavaScript成果如下：
 
 ```typescript
@@ -96,3 +95,26 @@ console.log(`Hello, ${name}!`);    // TypeScript 發現這是 Template，會自�
 var name = 'John'; 
 console.log("Hello, " + name + "!");
 ```
+
+Enum
+
+列舉類型 (Enum) 是 TypeScript 獨有而 JavaScript 沒有的型別，需要宣告固定種類的變數時相當好用，例如衣服的尺寸可能有大、中、小三種，就可以使用 Enum 來定義
+
+```typescript
+enum Size {
+    Large = 0,
+    Medium = 1,
+    Small = 2    
+}
+```
+
+
+Enum某程度上可以讓 TypeScript 可以引用其自定義的關鍵字便於判別
+
+```typescript
+// 用 Enum 判別
+if(size === Size.Large){
+    // 程式碼放這裡
+}
+```
+
