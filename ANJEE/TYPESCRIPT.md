@@ -2,7 +2,7 @@
 
 ## Strong Type
 
-在程式語言之中，有區分為 強型別 - Strong Type 和 弱型別 - Weak Type 兩種類型，強型別語言比較著名的有像是 C#、Java 等等，它們對於變數的定義檢查比較嚴謹，如果沒有依照指定的型別傳入參數，在編譯時期就會拋出 Exception 警告開發人員。
+強型別語言對於變數的定義檢查比較嚴謹，如果沒有依照指定的型別傳入參數，在編譯時期就會拋出 Exception 警告開發人員。
 
 ![img](../captures/anjee_typescript_001.png)
 
