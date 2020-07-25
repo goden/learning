@@ -3,4 +3,5 @@
 * [在 Gitlab 上建立 Nuxt 專案](./NUXT_ON_GITLAB.md)
 * [在 Google Cloud Platform 上建立 Linux VM](./VM_ON_GCP.md)
   * [Google Cloud Platform 免費方案](./GCP_FREE.md)
+  * [登入 Google Cloud Platform 的 Linux VM](./LOGIN_GCP_VM.md)
 
