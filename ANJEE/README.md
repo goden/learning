@@ -2,3 +2,6 @@
 
 潘家義(Sparrow_Pan@uuu.com.tw)
 
+## TypeScript
+
+* 強型別(Strong Type)
