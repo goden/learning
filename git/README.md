@@ -133,5 +133,3 @@ $ sudo apt-get install gitk
   ```bash
   $ git push -u origin dev
   ```
-
-* 
