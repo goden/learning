@@ -130,7 +130,8 @@ $ sudo apt-get install gitk
 
 - 將程式碼從本地端儲存庫(Local Repository)推送到遠端儲存庫(Remote Repository)
 
-```bash
-$ git push -u origin dev
-```
+  ```bash
+  $ git push -u origin dev
+  ```
 
+* 
